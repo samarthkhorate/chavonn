@@ -117,7 +117,7 @@ INSERT INTO tbl_orders (
 )";
 if (!$con->query($sql)) exit('DB Error: '.$con->error);
 
-$callback_url = "https://beperfectgroup.in/order/thank_you.php?order_id=$page_tracking_id";
+$callback_url = "https://chavonn.in/order/thank_you.php?order_id=$page_tracking_id";
 ?>
 
 <!DOCTYPE html>
@@ -172,7 +172,7 @@ function startPayment(){
         key: "<?= htmlspecialchars($api_key) ?>",
         amount: "<?= (int)round($pay_now * 100) ?>",
         currency: "INR",
-        name: "Be Perfect Group",
+        name: "Chav Onn",
         description: "Order <?= htmlspecialchars($page_tracking_id) ?>",
         order_id: "<?= htmlspecialchars($razorpay_order_id) ?>",
         callback_url: "<?= htmlspecialchars($callback_url) ?>",
