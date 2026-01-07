@@ -109,7 +109,7 @@ while ($order = mysqli_fetch_assoc($res)) {
            NEOSHIP PAYLOAD
         ============================================= */
         $payload = [
-            "seller_code"       => "585625",
+            "seller_code"       => "985263",
             "order_id"          => $order['order_id'],
             "name"              => $order['fname'],
             "phone"             => $order['mobno'],
