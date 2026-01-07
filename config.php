@@ -1,13 +1,13 @@
 <?php
 // Database configuration
 $host = '217.21.84.103';       // Database host
-$dbname = 'u139090234_db1';  // Database name
-$username = 'u139090234_usr1';  // Database username
-$password = 'Abhi@#9865312';  // Database password
+$dbname = 'u139090234_chavonn_db';  // Database name
+$username = 'u139090234_chavoon_user';  // Database username
+$password = 'Chavoon@#986532';  // Database password
 define('DB_HOST', '217.21.84.103');  // Database host
-define('DB_USER', 'u139090234_usr1');       // Database username
-define('DB_PASS', 'Abhi@#9865312');           // Database password
-define('DB_NAME', 'u139090234_db1');  // Database name
+define('DB_USER', 'u139090234_chavoon_user');       // Database username
+define('DB_PASS', 'Chavoon@#986532');           // Database password
+define('DB_NAME', 'u139090234_chavonn_db');  // Database name
 // Establishing the database connection
 $con = new mysqli($host, $username, $password, $dbname);
 
@@ -18,22 +18,22 @@ if ($con->connect_error) {
 
 // Uncomment this line for debugging (remove in production)
 // echo "Connected successfully";
-$api_key = 'rzp_live_5G1cQunOS5weFv';
-$api_secret = 'HDtu8kq1eE2eHR35ArVw6CCq';
+$api_key = 'rzp_live_S150dRy7Wvo1q9';
+$api_secret = '4en7sUTCRfRl5VOAP4St5WTO';
 
 
-$api_key1 = 'rzp_live_5G1cQunOS5weFv';
-$api_secret1 = 'HDtu8kq1eE2eHR35ArVw6CCq';
+$api_key1 = 'rzp_live_S150dRy7Wvo1q9';
+$api_secret1 = '4en7sUTCRfRl5VOAP4St5WTO';
  
 
 $razorpay_config1 = array(
-    'api_key1' => 'rzp_live_5G1cQunOS5weFv',
-    'api_secret1' => 'HDtu8kq1eE2eHR35ArVw6CCq',
+    'api_key1' => 'rzp_live_S150dRy7Wvo1q9',
+    'api_secret1' => '4en7sUTCRfRl5VOAP4St5WTO',
 );
 
 $razorpay_config = array(
-    'api_key' => 'rzp_live_5G1cQunOS5weFv',
-    'api_secret' => 'HDtu8kq1eE2eHR35ArVw6CCq',
+    'api_key' => 'rzp_live_S150dRy7Wvo1q9',
+    'api_secret' => '4en7sUTCRfRl5VOAP4St5WTO',
 );
 
 
