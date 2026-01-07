@@ -196,7 +196,7 @@ MRP ₹<?php echo $product['product_mrp'];?>
 <label>Payment Mode</label><br>
 <input type="radio" name="paymentMode" value="prepaid" checked onclick="updateSummary()"> Prepaid  
 <br>
-<input type="radio" name="paymentMode" value="cod" onclick="updateSummary()"> Cash on Delivery
+<!-- <input type="radio" name="paymentMode" value="cod" onclick="updateSummary()"> Cash on Delivery -->
 </div>
 
 <!-- SUMMARY -->
