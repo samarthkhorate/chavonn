@@ -37,7 +37,7 @@ $total_pending = mysqli_num_rows($result);
     </div>
 
     <div>
-      <a href="https://beperfectgroup.in/cron_send_orders_to_neoship.php" 
+      <a href="https://chavonn.in/cron_send_orders_to_neoship.php" 
          target="_blank" 
          class="btn btn-primary btn-sm">
          <i class="fa fa-paper-plane"></i> Send Orders to Neoship
