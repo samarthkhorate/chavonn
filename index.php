@@ -882,9 +882,9 @@ h1, h2, h3, h4, h5 {
           Stay connected for updates and recipes
         </p>
         <div class="social-icons">
-          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/share/1AgAnR5uw4/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/chavonn.india?igsh=ZXRxZjF3NDI2d3h1" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/qr/NG7ENDKZOP7WG1" class="social-icon"><i class="fab fa-whatsapp"></i></a>
           <!-- <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
           <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a> -->
         </div>
