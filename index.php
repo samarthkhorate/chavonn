@@ -626,7 +626,7 @@ h1, h2, h3, h4, h5 {
 <nav class="navbar navbar-expand-lg">
   <div class="container">
     <a class="navbar-brand" href="#">
-      Chavonn Spices
+      Chav Onn Spices
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
@@ -717,7 +717,7 @@ h1, h2, h3, h4, h5 {
               <?php endif; ?>
             </div>
             <a href="order/index.php?pg_sku=<?php echo $sku; ?>" class="card-btn">
-              <i class="fas fa-cart-plus"></i> Add to Cart
+              <i class="fas fa-cart-plus"></i> Buy Now
             </a>
           </div>
         </div>
