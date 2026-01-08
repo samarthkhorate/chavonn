@@ -665,9 +665,9 @@ h1, h2, h3, h4, h5 {
         </a>
       </div>
       <div class="col-lg-6 reveal">
-        <div class="hero-img-container text-center">
+        <!-- <div class="hero-img-container text-center">
           <img src="assets/images/spices-hero.png" class="img-fluid" alt="Chavonn Spices Collection" style="max-height: 500px;">
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
