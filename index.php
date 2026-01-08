@@ -1012,7 +1012,7 @@ section, div, header, footer, nav {
             
             <div class="promo-details">
               <ul class="promo-features">
-                <li><i class="fas fa-check"></i> 6 Essential Indian Spices</li>
+                <li><i class="fas fa-check"></i> 7 Essential Indian Spices</li>
                 <li><i class="fas fa-check"></i> 100% Natural & Pure</li>
                 <li><i class="fas fa-check"></i> Traditional Slow Grinding</li>
                 <li><i class="fas fa-check"></i> Free Recipe E-Book Included</li>
