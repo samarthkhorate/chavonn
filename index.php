@@ -27,6 +27,7 @@
   --text-light: #ffffff;
   --card-bg: #ffffff;
   --shadow: rgba(46, 125, 50, 0.15);
+  --gold: #ffd700;
 }
 
 * {
@@ -126,7 +127,7 @@ h1, h2, h3, h4, h5 {
 /* Hero Section */
 .hero {
   background: linear-gradient(135deg, var(--light-green) 0%, #ffffff 100%);
-  padding: 100px 0;
+  padding: 80px 0 100px;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -216,6 +217,189 @@ h1, h2, h3, h4, h5 {
 .hero-btn:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 25px rgba(46, 125, 50, 0.3);
+}
+
+/* Mini Masala Box Promo Block */
+.mini-masala-promo {
+  background: linear-gradient(135deg, #ffffff, #f1f8e9);
+  border-radius: 25px;
+  padding: 25px;
+  margin-top: 40px;
+  border: 2px solid var(--light-green);
+  box-shadow: 0 15px 35px rgba(46, 125, 50, 0.2);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.mini-masala-promo:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(46, 125, 50, 0.3);
+}
+
+.promo-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: linear-gradient(135deg, var(--gold), #ffed4e);
+  color: var(--forest-green);
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 800;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+  z-index: 2;
+}
+
+.promo-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.promo-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, var(--primary-green), var(--dark-green));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 30px;
+  flex-shrink: 0;
+  box-shadow: 0 8px 20px var(--shadow);
+}
+
+.promo-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--forest-green);
+  margin-bottom: 5px;
+}
+
+.promo-subtitle {
+  color: var(--primary-green);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.promo-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 25px;
+  align-items: center;
+}
+
+.promo-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid var(--light-green);
+  transition: transform 0.5s ease;
+}
+
+.promo-image:hover {
+  transform: scale(1.05);
+}
+
+.promo-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.promo-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.promo-features li {
+  padding: 8px 0;
+  border-bottom: 1px dashed rgba(46, 125, 50, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.promo-features li i {
+  color: var(--accent-green);
+  font-size: 16px;
+}
+
+.promo-price {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.promo-original-price {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.promo-discounted-price {
+  color: var(--primary-green);
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.promo-discount-badge {
+  background: linear-gradient(135deg, #ff5252, #ff1744);
+  color: white;
+  padding: 6px 15px;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.promo-button {
+  background: linear-gradient(135deg, var(--primary-green), var(--dark-green));
+  color: white;
+  border: none;
+  padding: 14px 25px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.promo-button:hover {
+  background: linear-gradient(135deg, var(--dark-green), var(--forest-green));
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px var(--shadow);
+  color: white;
+}
+
+.promo-ribbon {
+  position: absolute;
+  top: -10px;
+  left: -40px;
+  background: linear-gradient(135deg, var(--accent-green), var(--lime-green));
+  color: white;
+  padding: 10px 40px;
+  transform: rotate(-45deg);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Products Section */
@@ -586,6 +770,17 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Responsive Design */
+@media (max-width: 992px) {
+  .promo-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .promo-image {
+    height: 200px;
+  }
+}
+
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 36px;
@@ -600,7 +795,8 @@ h1, h2, h3, h4, h5 {
   
   .hero-btn,
   .card-btn,
-  .submit-btn {
+  .submit-btn,
+  .promo-button {
     padding: 14px 30px;
     width: 100%;
     text-align: center;
@@ -637,6 +833,19 @@ h1, h2, h3, h4, h5 {
   .discount-badge {
     font-size: 12px;
     padding: 3px 8px;
+  }
+  
+  .promo-title {
+    font-size: 20px;
+  }
+  
+  .promo-discounted-price {
+    font-size: 26px;
+  }
+  
+  .promo-badge {
+    font-size: 12px;
+    padding: 6px 15px;
   }
   
   .contact-item {
@@ -692,6 +901,18 @@ h1, h2, h3, h4, h5 {
   
   .about-features {
     grid-template-columns: 1fr;
+  }
+  
+  .promo-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .promo-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
   }
 }
 
@@ -768,6 +989,47 @@ section, div, header, footer, nav {
         <a href="#products" class="hero-btn">
           <i class="fas fa-shopping-bag"></i> Shop Our Spices
         </a>
+        
+        <!-- Mini Masala Box Promo Block -->
+        <div class="mini-masala-promo reveal">
+          <div class="promo-ribbon">SPECIAL OFFER</div>
+          <div class="promo-badge">BEST SELLER</div>
+          
+          <div class="promo-header">
+            <div class="promo-icon">
+              <i class="fas fa-gift"></i>
+            </div>
+            <div>
+              <h3 class="promo-title">Chavonn Mini Masala Box</h3>
+              <p class="promo-subtitle">Perfect Starter Kit for Every Kitchen</p>
+            </div>
+          </div>
+          
+          <div class="promo-content">
+            <div>
+              <img src="order/product_images/mini-masala-box.jpg" alt="Chavonn Mini Masala Box" class="promo-image" onerror="this.src='https://images.unsplash.com/photo-1590771129823-8c72c5b3c0c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'">
+            </div>
+            
+            <div class="promo-details">
+              <ul class="promo-features">
+                <li><i class="fas fa-check"></i> 6 Essential Indian Spices</li>
+                <li><i class="fas fa-check"></i> 100% Natural & Pure</li>
+                <li><i class="fas fa-check"></i> Traditional Slow Grinding</li>
+                <li><i class="fas fa-check"></i> Free Recipe E-Book Included</li>
+              </ul>
+              
+              <div class="promo-price">
+                <span class="promo-original-price">₹399.00</span>
+                <span class="promo-discounted-price">₹299.00</span>
+                <span class="promo-discount-badge">Save ₹100</span>
+              </div>
+              
+              <a href="order/index.php?pg_sku=22" class="promo-button">
+                <i class="fas fa-bolt"></i> Get Your Starter Kit
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
