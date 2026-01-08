@@ -255,7 +255,7 @@ h1, h2, h3, h4, h5 {
   border-radius: 2px;
 }
 
-/* Product Cards */
+/* Product Cards - OVERLAY REMOVED */
 .product-card {
   background: var(--card-bg);
   border-radius: 20px;
@@ -291,7 +291,8 @@ h1, h2, h3, h4, h5 {
   transform: scale(1.08);
 }
 
-.card-img-overlay {
+/* REMOVED CARD OVERLAY CODE */
+/* .card-img-overlay {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -301,7 +302,7 @@ h1, h2, h3, h4, h5 {
   border-radius: 20px;
   font-size: 14px;
   font-weight: 600;
-}
+} */
 
 .card-body {
   padding: 25px;
@@ -702,11 +703,7 @@ h1, h2, h3, h4, h5 {
         <div class="product-card">
           <div class="card-img-container">
             <img src="order/product_images/<?php echo $img; ?>" alt="<?php echo $name; ?>">
-            <?php if ($discount > 0): ?>
-              <div class="card-img-overlay">
-                <?php echo $discount; ?>% OFF
-              </div>
-            <?php endif; ?>
+            <!-- OVERLAY REMOVED -->
           </div>
           <div class="card-body">
             <h5 class="card-title"><?php echo $name; ?></h5>
