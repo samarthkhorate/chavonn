@@ -35,16 +35,33 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
+  width: 100%;
+  overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg-light);
   color: var(--text-dark);
-  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: 'Playfair Display', serif;
   color: var(--forest-green);
+}
+
+.container {
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.col-lg-4, .col-md-6, .col-lg-6, .col-lg-5, .col-lg-7, .col-md-6 {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* Header & Navigation */
@@ -55,6 +72,11 @@ h1, h2, h3, h4, h5 {
   position: sticky;
   top: 0;
   z-index: 1000;
+  width: 100%;
+}
+
+.navbar .container {
+  width: 100%;
 }
 
 .navbar-brand {
@@ -68,6 +90,7 @@ h1, h2, h3, h4, h5 {
   display: flex;
   align-items: center;
   gap: 10px;
+  white-space: nowrap;
 }
 
 .navbar-brand::before {
@@ -106,6 +129,7 @@ h1, h2, h3, h4, h5 {
   padding: 100px 0;
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .hero::before {
@@ -126,6 +150,7 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 24px;
   color: var(--forest-green);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word;
 }
 
 .hero h1 span {
@@ -149,7 +174,8 @@ h1, h2, h3, h4, h5 {
   color: #444;
   line-height: 1.8;
   margin-bottom: 32px;
-  max-width: 600px;
+  max-width: 100%;
+  word-wrap: break-word;
 }
 
 .hero-btn {
@@ -168,6 +194,8 @@ h1, h2, h3, h4, h5 {
   border: none;
   position: relative;
   overflow: hidden;
+  width: auto;
+  white-space: nowrap;
 }
 
 .hero-btn::before {
@@ -190,48 +218,11 @@ h1, h2, h3, h4, h5 {
   box-shadow: 0 12px 25px rgba(46, 125, 50, 0.3);
 }
 
-.hero-img-container {
-  position: relative;
-  padding: 20px;
-}
-
-.hero-img-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, var(--light-green), transparent);
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  animation: morphing 15s infinite;
-  z-index: 1;
-}
-
-@keyframes morphing {
-  0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
-  25% { border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; }
-  50% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; }
-  75% { border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%; }
-  100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
-}
-
-.hero-img-container img {
-  position: relative;
-  z-index: 2;
-  border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-  transition: transform 0.5s ease;
-}
-
-.hero-img-container img:hover {
-  transform: rotate(-2deg) scale(1.03);
-}
-
 /* Products Section */
 .products-section {
   padding: 100px 0;
   background: linear-gradient(to bottom, #ffffff, var(--bg-light));
+  width: 100%;
 }
 
 .section-title {
@@ -241,6 +232,7 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 60px;
   position: relative;
   padding-bottom: 20px;
+  word-wrap: break-word;
 }
 
 .section-title::after {
@@ -255,7 +247,7 @@ h1, h2, h3, h4, h5 {
   border-radius: 2px;
 }
 
-/* Product Cards - OVERLAY REMOVED */
+/* Product Cards */
 .product-card {
   background: var(--card-bg);
   border-radius: 20px;
@@ -266,6 +258,7 @@ h1, h2, h3, h4, h5 {
   height: 100%;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .product-card:hover {
@@ -278,6 +271,7 @@ h1, h2, h3, h4, h5 {
   height: 260px;
   overflow: hidden;
   position: relative;
+  width: 100%;
 }
 
 .card-img-container img {
@@ -285,30 +279,19 @@ h1, h2, h3, h4, h5 {
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
+  display: block;
 }
 
 .product-card:hover .card-img-container img {
   transform: scale(1.08);
 }
 
-/* REMOVED CARD OVERLAY CODE */
-/* .card-img-overlay {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: var(--primary-green);
-  color: white;
-  padding: 5px 12px;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: 600;
-} */
-
 .card-body {
   padding: 25px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .card-title {
@@ -317,16 +300,19 @@ h1, h2, h3, h4, h5 {
   color: var(--forest-green);
   margin-bottom: 15px;
   min-height: 48px;
+  word-wrap: break-word;
 }
 
 .price-container {
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .original-price {
   color: #999;
   text-decoration: line-through;
   font-size: 16px;
+  display: inline-block;
 }
 
 .discounted-price {
@@ -334,6 +320,7 @@ h1, h2, h3, h4, h5 {
   font-size: 26px;
   font-weight: 800;
   margin-left: 10px;
+  display: inline-block;
 }
 
 .discount-badge {
@@ -345,6 +332,7 @@ h1, h2, h3, h4, h5 {
   font-weight: 600;
   display: inline-block;
   margin-left: 10px;
+  white-space: nowrap;
 }
 
 .card-btn {
@@ -375,12 +363,14 @@ h1, h2, h3, h4, h5 {
   padding: 100px 0;
   background: linear-gradient(135deg, var(--light-green) 0%, #ffffff 100%);
   position: relative;
+  width: 100%;
 }
 
 .about-content {
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
   text-align: center;
+  padding: 0 15px;
 }
 
 .about-features {
@@ -388,6 +378,7 @@ h1, h2, h3, h4, h5 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
   margin-top: 50px;
+  width: 100%;
 }
 
 .feature-item {
@@ -396,6 +387,7 @@ h1, h2, h3, h4, h5 {
   border-radius: 20px;
   box-shadow: 0 10px 30px var(--shadow);
   transition: transform 0.3s ease;
+  width: 100%;
 }
 
 .feature-item:hover {
@@ -412,6 +404,7 @@ h1, h2, h3, h4, h5 {
   font-size: 22px;
   color: var(--forest-green);
   margin-bottom: 15px;
+  word-wrap: break-word;
 }
 
 /* Contact Section */
@@ -419,6 +412,7 @@ h1, h2, h3, h4, h5 {
   padding: 100px 0;
   background: linear-gradient(135deg, var(--forest-green), var(--dark-green));
   color: var(--text-light);
+  width: 100%;
 }
 
 .contact-section h2 {
@@ -426,14 +420,16 @@ h1, h2, h3, h4, h5 {
 }
 
 .contact-info {
-  padding-right: 50px;
+  padding-right: 0;
+  width: 100%;
 }
 
 .contact-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 25px;
   gap: 20px;
+  width: 100%;
 }
 
 .contact-icon {
@@ -457,6 +453,8 @@ h1, h2, h3, h4, h5 {
   border-radius: 12px;
   margin-bottom: 20px;
   transition: all 0.3s ease;
+  width: 100%;
+  max-width: 100%;
 }
 
 .contact-form input:focus,
@@ -482,6 +480,7 @@ h1, h2, h3, h4, h5 {
   font-size: 18px;
   width: 100%;
   transition: all 0.3s ease;
+  display: block;
 }
 
 .submit-btn:hover {
@@ -494,6 +493,7 @@ h1, h2, h3, h4, h5 {
   background: var(--forest-green);
   color: var(--text-light);
   padding: 60px 0 30px;
+  width: 100%;
 }
 
 .footer-content {
@@ -501,6 +501,7 @@ h1, h2, h3, h4, h5 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 40px;
   margin-bottom: 40px;
+  width: 100%;
 }
 
 .footer-logo {
@@ -511,6 +512,7 @@ h1, h2, h3, h4, h5 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  word-wrap: break-word;
 }
 
 .footer-links h4,
@@ -518,15 +520,18 @@ h1, h2, h3, h4, h5 {
   color: var(--light-green);
   margin-bottom: 25px;
   font-size: 20px;
+  word-wrap: break-word;
 }
 
 .footer-links ul {
   list-style: none;
   padding: 0;
+  width: 100%;
 }
 
 .footer-links li {
   margin-bottom: 12px;
+  width: 100%;
 }
 
 .footer-links a {
@@ -536,6 +541,7 @@ h1, h2, h3, h4, h5 {
   display: flex;
   align-items: center;
   gap: 10px;
+  width: 100%;
 }
 
 .footer-links a:hover {
@@ -547,6 +553,7 @@ h1, h2, h3, h4, h5 {
   display: flex;
   gap: 15px;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .social-icon {
@@ -560,6 +567,7 @@ h1, h2, h3, h4, h5 {
   color: white;
   font-size: 18px;
   transition: all 0.3s ease;
+  flex-shrink: 0;
 }
 
 .social-icon:hover {
@@ -573,22 +581,30 @@ h1, h2, h3, h4, h5 {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.7);
   font-size: 15px;
+  width: 100%;
+  word-wrap: break-word;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 36px;
+    line-height: 1.3;
   }
   
   .section-title {
     font-size: 32px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   
   .hero-btn,
   .card-btn,
   .submit-btn {
     padding: 14px 30px;
+    width: 100%;
+    text-align: center;
+    display: block;
   }
   
   .contact-info {
@@ -605,6 +621,89 @@ h1, h2, h3, h4, h5 {
   .contact-section {
     padding: 70px 0;
   }
+  
+  .navbar-brand {
+    font-size: 26px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+  }
+  
+  .discounted-price {
+    font-size: 22px;
+  }
+  
+  .discount-badge {
+    font-size: 12px;
+    padding: 3px 8px;
+  }
+  
+  .contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .contact-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+  
+  .footer-content {
+    gap: 30px;
+  }
+  
+  .col-lg-4, .col-md-6 {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .product-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+  
+  .section-title {
+    font-size: 26px;
+  }
+  
+  .hero p {
+    font-size: 16px;
+  }
+  
+  .navbar-brand {
+    font-size: 22px;
+  }
+  
+  .card-img-container {
+    height: 220px;
+  }
+  
+  .footer-logo {
+    font-size: 26px;
+  }
+  
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Fix for overflow issues */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.form-control {
+  max-width: 100%;
 }
 
 /* Animation for scroll reveal */
@@ -617,6 +716,12 @@ h1, h2, h3, h4, h5 {
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Ensure no horizontal overflow */
+section, div, header, footer, nav {
+  max-width: 100vw;
+  box-sizing: border-box;
 }
 </style>
 </head>
@@ -654,7 +759,7 @@ h1, h2, h3, h4, h5 {
 <section id="home" class="hero">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-lg-6 reveal">
+      <div class="col-lg-12 reveal">
         <h1>Pure & Authentic <span>Indian Spices</span></h1>
         <p>
           Hand-picked ingredients • Traditional grinding •  
@@ -663,11 +768,6 @@ h1, h2, h3, h4, h5 {
         <a href="#products" class="hero-btn">
           <i class="fas fa-shopping-bag"></i> Shop Our Spices
         </a>
-      </div>
-      <div class="col-lg-6 reveal">
-        <!-- <div class="hero-img-container text-center">
-          <img src="assets/images/spices-hero.png" class="img-fluid" alt="Chavonn Spices Collection" style="max-height: 500px;">
-        </div> -->
       </div>
     </div>
   </div>
@@ -885,8 +985,6 @@ h1, h2, h3, h4, h5 {
           <a href="https://www.facebook.com/share/1AgAnR5uw4/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
           <a href="https://www.instagram.com/chavonn.india?igsh=ZXRxZjF3NDI2d3h1" class="social-icon"><i class="fab fa-instagram"></i></a>
           <a href="https://wa.me/qr/NG7ENDKZOP7WG1" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-          <!-- <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a> -->
         </div>
       </div>
     </div>
@@ -945,6 +1043,18 @@ window.addEventListener('scroll', function() {
   } else {
     navbar.style.boxShadow = '0 4px 20px rgba(15, 47, 27, 0.2)';
   }
+});
+
+// Fix for mobile overflow
+document.addEventListener('DOMContentLoaded', function() {
+  // Prevent horizontal scrolling
+  document.body.style.overflowX = 'hidden';
+  
+  // Ensure all elements are within viewport
+  const allElements = document.querySelectorAll('*');
+  allElements.forEach(element => {
+    element.style.maxWidth = '100%';
+  });
 });
 </script>
 
