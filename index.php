@@ -807,7 +807,7 @@ h1, h2, h3, h4, h5 {
             </div>
             <div>
               <h5>Call Us</h5>
-              <p>+91 98765 43210</p>
+              <p>+91 7249407268</p>
             </div>
           </div>
           
@@ -817,7 +817,7 @@ h1, h2, h3, h4, h5 {
             </div>
             <div>
               <h5>Email Us</h5>
-              <p>support@chavonnspices.com</p>
+              <p>chavonn.india@gmail.com</p>
             </div>
           </div>
           
@@ -827,7 +827,7 @@ h1, h2, h3, h4, h5 {
             </div>
             <div>
               <h5>Visit Us</h5>
-              <p>Pune, Maharashtra, India</p>
+              <p>College Road, Kowad - 416508, Kolhapur, Maharashtra, India</p>
             </div>
           </div>
         </div>
@@ -861,7 +861,7 @@ h1, h2, h3, h4, h5 {
       <div class="footer-brand">
         <div class="footer-logo">Chavonn Spices</div>
         <p style="color: rgba(255, 255, 255, 0.8);">
-          Bringing authentic Indian flavors to your kitchen since 2010. 
+          Bringing authentic Indian flavors to your kitchen since 2019. 
           Pure ingredients, traditional methods, unmatched quality.
         </p>
       </div>
@@ -884,8 +884,9 @@ h1, h2, h3, h4, h5 {
         <div class="social-icons">
           <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
           <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          <!-- <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a> -->
         </div>
       </div>
     </div>
