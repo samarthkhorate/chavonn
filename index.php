@@ -296,7 +296,7 @@ h1, h2, h3, h4, h5 {
 
 .promo-image {
   width: 100%;
-  height: 180px;
+  height: 280px;
   object-fit: cover;
   border-radius: 15px;
   border: 3px solid var(--light-green);
