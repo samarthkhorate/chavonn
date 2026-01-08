@@ -222,8 +222,8 @@ Pay ₹<?php echo $product['product_prepaid_price'];?> & Place Order
 </div>
 
 <div class="footer-container">
-📞 9588620512 | © 2025 <b>Chavonn Spices</b><br>
-Developed by <a href="https://neotechking.com/" class="footer-link">Neotechking</a>
+📞 7249407268 | © 2025 <b>Chavonn Spices</b><br>
+<!-- Developed by <a href="https://neotechking.com/" class="footer-link">Neotechking</a> -->
 </div>
 
 <script>
