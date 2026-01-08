@@ -1007,7 +1007,7 @@ section, div, header, footer, nav {
           
           <div class="promo-content">
             <div>
-              <img src="order/product_images/mini-masala-box.jpg" alt="Chavonn Mini Masala Box" class="promo-image" onerror="this.src='https://images.unsplash.com/photo-1590771129823-8c72c5b3c0c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'">
+              <img src="order/product_images/0.png" alt="Chavonn Mini Masala Box" class="promo-image" onerror="this.src='https://images.unsplash.com/photo-1590771129823-8c72c5b3c0c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'">
             </div>
             
             <div class="promo-details">
@@ -1019,9 +1019,9 @@ section, div, header, footer, nav {
               </ul>
               
               <div class="promo-price">
-                <span class="promo-original-price">₹399.00</span>
-                <span class="promo-discounted-price">₹299.00</span>
-                <span class="promo-discount-badge">Save ₹100</span>
+                <span class="promo-original-price">₹550.00</span>
+                <span class="promo-discounted-price">₹365.00</span>
+                <span class="promo-discount-badge">Save ₹185</span>
               </div>
               
               <a href="order/index.php?pg_sku=22" class="promo-button">
